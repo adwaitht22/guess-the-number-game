@@ -1,4 +1,4 @@
--🎯 Guess the Number Game:
+- Guess the Number Game:
 
 An interactive number guessing game built using HTML, CSS, and JavaScript.
 
