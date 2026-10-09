@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="game-card">
+
+            <p class="game-label">NUMBER CHALLENGE</p>
+
+            <div class="game-icon">🎯</div>
+
+            <h1>Guess the Number</h1>
+
+            <p class="description">
+                I'm thinking of a number between 1 and 100.
+                Can you guess it?
+            </p>
+
+            <label for="userInput">Enter your guess</label>
+
+            <input
+                type="number"
+                id="userInput"
+                class="user-input"
+                min="1"
+                max="100"
+                placeholder="?"
+            >
+
+            <button class="check-button" onclick="checkGuess()">
+                Check My Guess →
+            </button>
+
+            <p class="game-result" id="gameResult" aria-live="polite">
+                Good luck! Give it your best shot.
+            </p>
+
+            <button class="reset-button" onclick="resetGame()">
+                ↻ Play Again
+            </button>
+
+            <p class="attempts">Attempts: <span id="attemptCount">0</span></p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
